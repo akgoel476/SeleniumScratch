@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-11T17:49:40 IST" name="Suite" finished-at="2022-12-11T17:50:42 IST" duration-ms="62016">
+    <groups>
+      <group name="validation">
+        <method signature="ErrorValidation.Validatin()[pri:0, instance:OIMT.Project.ErrorValidation@55536d9e]" name="Validatin" class="OIMT.Project.ErrorValidation"/>
+      </group> <!-- validation -->
+    </groups>
+    <test started-at="2022-12-11T17:49:40 IST" name="ErrorValidation" finished-at="2022-12-11T17:50:04 IST" duration-ms="24104">
+      <class name="OIMT.Project.ErrorValidation">
+        <test-method is-config="true" signature="launchAppliaction()[pri:0, instance:OIMT.Project.ErrorValidation@55536d9e]" started-at="2022-12-11T17:49:40 IST" name="launchAppliaction" finished-at="2022-12-11T17:50:00 IST" duration-ms="19863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAppliaction -->
+        <test-method signature="Validatin()[pri:0, instance:OIMT.Project.ErrorValidation@55536d9e]" started-at="2022-12-11T17:50:00 IST" name="Validatin" finished-at="2022-12-11T17:50:03 IST" duration-ms="2888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:OIMT.Project.ErrorValidation@55536d9e]" started-at="2022-12-11T17:50:03 IST" name="close" finished-at="2022-12-11T17:50:04 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- OIMT.Project.ErrorValidation -->
+    </test> <!-- ErrorValidation -->
+    <test started-at="2022-12-11T17:49:40 IST" name="StandAlone" finished-at="2022-12-11T17:50:42 IST" duration-ms="62016">
+      <class name="OIMT.Project.StandAloneTest">
+        <test-method is-config="true" signature="launchAppliaction()[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:49:41 IST" name="launchAppliaction" finished-at="2022-12-11T17:50:01 IST" duration-ms="19648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAppliaction -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:01 IST" name="login" data-provider="getData" finished-at="2022-12-11T17:50:10 IST" duration-ms="9700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, email=anshika@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:10 IST" name="close" finished-at="2022-12-11T17:50:11 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchAppliaction()[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:11 IST" name="launchAppliaction" finished-at="2022-12-11T17:50:19 IST" duration-ms="8238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAppliaction -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:19 IST" name="login" data-provider="getData" finished-at="2022-12-11T17:50:41 IST" duration-ms="21670" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Badrinath@2022, email=akgoel476@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div[class*='mb-3'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Abhey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58568/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2044d1246e117f876c7cb3517e0cd98]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[class*='mb-3'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Abhey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58568/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2044d1246e117f876c7cb3517e0cd98
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at OIMT.Project.AbstractComponent.waitForElementToAppear(AbstractComponent.java:29)
+at OIMT.Project.CatalogItem.getProducts(CatalogItem.java:33)
+at OIMT.Project.StandAloneTest.login(StandAloneTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:42 IST" name="close" finished-at="2022-12-11T17:50:42 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:OIMT.Project.StandAloneTest@55740540]" started-at="2022-12-11T17:50:42 IST" name="OrderHistoryTest" finished-at="2022-12-11T17:50:42 IST" depends-on-methods="OIMT.Project.StandAloneTest.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method OIMT.Project.StandAloneTest.OrderHistoryTest() on instance OIMT.Project.StandAloneTest@55740540 depends on not successfully finished methods 
+[OIMT.Project.StandAloneTest.login() on instance OIMT.Project.StandAloneTest@55740540]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method OIMT.Project.StandAloneTest.OrderHistoryTest() on instance OIMT.Project.StandAloneTest@55740540 depends on not successfully finished methods 
+[OIMT.Project.StandAloneTest.login() on instance OIMT.Project.StandAloneTest@55740540]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- OIMT.Project.StandAloneTest -->
+    </test> <!-- StandAlone -->
+  </suite> <!-- Suite -->
+</testng-results>
